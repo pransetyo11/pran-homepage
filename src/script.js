@@ -1,3 +1,9 @@
+//fade effect
+document.addEventListener("DOMContentLoaded", () => {
+    document.body.classList.remove("opacity-0", "translate-y-10");
+    document.body.classList.add("opacity-100", "translate-y-0");
+  });
+
 // navbar fixed
 window.onscroll = function(){
     const header = document.querySelector('header')

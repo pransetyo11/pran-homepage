@@ -12,7 +12,7 @@
         )
     </script>
 </head>
-<body class="bg-neutral-100">
+<body class="opacity-0 translate-y-10 transition-all duration-1000 ease-out bg-neutral-100">
     <!-- Header Section Start -->
     <header class="bg-transparent absolute top-0 left-0 w-full 
     flex items-center z-10">
@@ -21,6 +21,23 @@
             <div class="px-4">
                 <a href="#home" class="font-bold text-lg text-primary 
                 block py-6">Pranoto Setyo Mukti</a>
+            </div>
+            <div class="flex items-center pl-8 mr-4">
+                <div class="flex">
+                    <span class="mr-2 text-sm text-slate-500">
+                        Light🌞
+                    </span>
+                    <input type="checkbox" class="hidden" id="dark-toggle"/>
+                    <label for="dark-toggle">
+                        <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                            <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300
+                            ease-in-out"></div>
+                        </div>
+                    </label>
+                    <span class="ml-2 text-sm text-slate-500">
+                        Dark🌚
+                    </span>
+                </div>
             </div>
             <div class="flex items-center px-4">
                 <button id="hamburger" name="hamburger" type="button"
@@ -58,23 +75,6 @@
                             <a href="#contact" class="text-base text-dark py-2 mx-8
                             flex group-hover:text-primary dark:text-white">Contact</a>
                         </li>
-                        <li class="mt-3 lg:mt-0 flex items-center pl-8">
-                            <div class="flex">
-                                <span class="mr-2 text-sm text-slate-500">
-                                    Light🌞
-                                </span>
-                                <input type="checkbox" class="hidden" id="dark-toggle"/>
-                                <label for="dark-toggle">
-                                    <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
-                                        <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300
-                                        ease-in-out"></div>
-                                    </div>
-                                </label>
-                                <span class="ml-2 text-sm text-slate-500">
-                                    Dark🌚
-                                </span>
-                            </div>
-                        </li>
                     </ul>
                 </nav>
             </div>
@@ -90,9 +90,12 @@
                 <div class="w-full self-center px-4 lg:w-1/2">
                     <h1 class="text-base font-semibold text-primary md:text-xl">Hallo 👋, Saya 
                         <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl dark:text-slate-100">Pranoto Setyo Mukti</span></h1>
-                    <h2 class="font-medium text-sencondary dark:text-slate-400 text-lg mb-5 lg:text-2xl">Bachelor Degree of <a href="http://teknik.trunojoyo.ac.id/teknik-mekatronika-2/" target="_blank" class="text-primary font-bold">Mechatronic Engineering</a></h2>
-                    <p class="font-medium text-sencondary dark:text-slate-400 mb-10 leading-relaxed text-justify">
+                    <h2 class="font-medium text-sencondary dark:text-slate-400 text-lg mb-5 lg:text-2xl">Bachelor Degree of <a href="http://teknik.trunojoyo.ac.id/teknik-mekatronika-2/" target="_blank" class="text-primary font-bold hover:opacity-70 transition duration-300">Mechatronic Engineering</a></h2>
+                    <p class="font-medium text-sencondary dark:text-slate-400 mb-3 leading-relaxed text-justify">
                         Selamat datang di portofolio saya! Di sini, saya berbagi perjalanan, karya, dan ide-ide yang saya kembangkan. Semoga bisa menjadi inspirasi dan awal dari hal-hal baru yang positif.
+                    </p>
+                    <p class="font-medium text-sencondary dark:text-slate-400 mb-10 leading-relaxed text-justify">
+                        Welcome to my portofolio. Here, I would like to share about my journeys, creations, and ideas that I developed. Hopefully, it can inspiring and beginning for all the new positive things ahead.
                     </p>
                     <a href="#contact" class="text-base font-semibold text-white
                     bg-primary py-3 px-8 rounded-full hover:shadow-lg
@@ -125,9 +128,16 @@
                     <p class="text-justify font-medium text-base text-sencondary max-w-xl dark:text-slate-400
                     lg:text-lg">
                         Saya adalah seorang Sarjana Teknik lulusan Teknik Mekatronika dari Universitas Trunojoyo Madura dengan minat yang kuat 
-                        dalam bidang elektronik dan IT. Saya adalah seorang yang disiplin dan suka mempelajari suatu hal baru, saya siap berkontribusi 
-                        di lingkungan kerja yang membutuhkan ketelitian dan inovasi. Dengan pemahaman teknis yang mendalam dan komitmen untuk terus belajar, 
-                        saya bersemangat untuk memberikan solusi efektif dan mendukung perkembangan teknologi dalam perusahaan.
+                        dalam bidang elektronik dan IT. Saya adalah seorang yang disiplin dan suka mempelajari suatu hal baru. Saya siap berkontribusi 
+                        di lingkungan kerja yang membutuhkan ketelitian dan inovasi. Dengan pemahaman teknis yang mendalam dan komitmen untuk terus belajar. 
+                        Saya bersemangat untuk memberikan solusi efektif dan mendukung perkembangan teknologi dalam perusahaan.
+                    </p>
+                    <p class="text-justify mt-3 font-medium text-base text-sencondary max-w-xl dark:text-slate-400
+                    lg:text-lg">
+                    I am a bachelor degree of Mechatronics Engineering, University of Trunojoyo Madura. I have passionate on electronic and IT. 
+                    I am very discipline and love to learn a new things. 
+                    I am ready to contribute to the office environment that need conscientious and innovation. 
+                    With the deepest technical understanding and eager to know something new. I can make effective solution to support the development of technology at the office.
                     </p>
                 </div>
                 <div class="w-full px-4 lg:w-1/2">
