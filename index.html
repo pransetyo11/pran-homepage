@@ -192,12 +192,12 @@
                     <p class="font-medium text-md text-sencondary md:text-lg dark:text-slate-400">Projek terbaru ini adalah hasil dari proses pembelajaran, kolaborasi, dan penerapan ide-ide yang saya kembangkan dengan penuh semangat.</p>
                 </div>
             </div>
-            <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 
+            <div class="relative w-full px-4 flex flex-wrap justify-center xl:w-10/12 
             xl:mx-auto">
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="flex items-center justify-center rounded-md shadow-md overflow-hidden h-72">
                         <img src="src/img/kalkulatorBMI.png" alt="Kalkulator BMI"
-                        width="w-full"/>
+                        class="w-full object-cover"/>
                     </div>
                     <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-slate-100">
                         Kalkulator BMI
@@ -213,7 +213,7 @@
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="flex items-center justify-center rounded-md shadow-md overflow-hidden h-72">
                         <img src="src/img/Rakitan.jpg" alt="Sistem Kontrol"
-                        width="w-full"/>
+                        class="w-full object-cover"/>
                     </div>
                     <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-slate-100">
                         Sistem Kontrol Bertingkat
@@ -226,70 +226,86 @@
                     bg-primary py-3 px-4 rounded-full hover:shadow-lg
                     hover:opacity-80 transition duration-300 ease-in-out">Lihat Disini</a>
                 </div>
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="flex items-center justify-center rounded-md shadow-md overflow-hidden h-72">
-                        <img src="src/img/CNC.png" alt="CNCmilling"
-                        width="w-full"/>
+                <!-- Hidden Content -->
+                <div id="contentContainer" class="flex flex-wrap overflow-hidden max-h-48 transition-all duration-500 ease-in-out">
+                    <div class="mb-12 p-4 md:w-1/2">
+                        <div class="flex items-center justify-center rounded-md shadow-md overflow-hidden h-72">
+                            <img src="src/img/CNC.png" alt="CNCmilling"
+                            class="w-full object-cover"/>
+                        </div>
+                        <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-slate-100 md:truncate">
+                            Project CNC Milling Absolut & Increment
+                        </h3>
+                        <p class="font-medium mb-6 text-base text-sencondary text-justify dark:text-slate-400">
+                            Projek ini menggunakan mesin CNC untuk membuat benda dengan tingkat presisi tinggi. Metode absolut dan incremental membantu memastikan hasil yang akurat dalam proses pemotongan atau pengukiran.
+                        </p>
+                        <a href="https://www.youtube.com/watch?v=UF76bwHcifI" 
+                        target="_blank" class="text-base font-semibold text-slate-200
+                        bg-primary py-3 px-4 rounded-full hover:shadow-lg
+                        hover:opacity-80 transition duration-300 ease-in-out">Lihat Disini</a>
                     </div>
-                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-slate-100 md:truncate">
-                        Project CNC Milling Absolut & Increment
-                    </h3>
-                    <p class="font-medium mb-6 text-base text-sencondary text-justify dark:text-slate-400">
-                        Projek ini menggunakan mesin CNC untuk membuat benda dengan tingkat presisi tinggi. Metode absolut dan incremental membantu memastikan hasil yang akurat dalam proses pemotongan atau pengukiran.
-                    </p>
-                    <a href="https://www.youtube.com/watch?v=UF76bwHcifI" 
-                    target="_blank" class="text-base font-semibold text-slate-200
-                    bg-primary py-3 px-4 rounded-full hover:shadow-lg
-                    hover:opacity-80 transition duration-300 ease-in-out">Lihat Disini</a>
-                </div>
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="flex items-center justify-center rounded-md shadow-md overflow-hidden h-72">
-                        <img src="src/img/Siskon1.png" alt="ModelMatematis"
-                        width="w-full"/>
+                    <div class="mb-12 p-4 md:w-1/2">
+                        <div class="flex items-center justify-center rounded-md shadow-md overflow-hidden h-72">
+                            <img src="src/img/Siskon1.png" alt="ModelMatematis"
+                            class="w-full object-cover"/>
+                        </div>
+                        <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-slate-100 md:truncate">
+                            Model Matematis dan Respon Sistem (Sistem Kontrol)
+                        </h3>
+                        <p class="font-medium mb-6 text-base text-sencondary text-justify dark:text-slate-400">
+                            Projek ini membuat model sederhana untuk memahami bagaimana suatu sistem bekerja dan merespons perintah. Model ini berguna untuk membantu mengontrol sistem agar berjalan lebih stabil.
+                        </p>
+                        <a href="https://www.youtube.com/watch?v=xt-2OXfu_Kc" 
+                        target="_blank" class="text-base font-semibold text-slate-200
+                        bg-primary py-3 px-4 rounded-full hover:shadow-lg
+                        hover:opacity-80 transition duration-300 ease-in-out">Lihat Disini</a>
                     </div>
-                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-slate-100 md:truncate">
-                        Model Matematis dan Respon Sistem (Sistem Kontrol)
-                    </h3>
-                    <p class="font-medium mb-6 text-base text-sencondary text-justify dark:text-slate-400">
-                        Projek ini membuat model sederhana untuk memahami bagaimana suatu sistem bekerja dan merespons perintah. Model ini berguna untuk membantu mengontrol sistem agar berjalan lebih stabil.
-                    </p>
-                    <a href="https://www.youtube.com/watch?v=xt-2OXfu_Kc" 
-                    target="_blank" class="text-base font-semibold text-slate-200
-                    bg-primary py-3 px-4 rounded-full hover:shadow-lg
-                    hover:opacity-80 transition duration-300 ease-in-out">Lihat Disini</a>
-                </div>
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="flex items-center justify-center rounded-md shadow-md overflow-hidden h-72">
-                        <img src="src/img/PLCmotor.png" alt="PLCmotor"
-                        width="w-full"/>
+                    <div class="mb-12 p-4 md:w-1/2">
+                        <div class="flex items-center justify-center rounded-md shadow-md overflow-hidden h-72">
+                            <img src="src/img/PLCmotor.png" alt="PLCmotor"
+                            class="w-full object-cover"/>
+                        </div>
+                        <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-slate-100 md:truncate">
+                            Ladder diagram Motor Listrik PLC
+                        </h3>
+                        <p class="font-medium mb-6 text-base text-sencondary text-justify dark:text-slate-400">
+                            Projek ini menunjukkan cara kerja motor listrik yang dikendalikan oleh PLC menggunakan ladder diagram. Diagram ini berfungsi sebagai panduan untuk mengatur proses otomatisasi motor listrik dengan langkah-langkah yang jelas.
+                        </p>
+                        <a href="https://www.youtube.com/watch?v=M-VzVg9PW_4" 
+                        target="_blank" class="text-base font-semibold text-slate-200
+                        bg-primary py-3 px-4 rounded-full hover:shadow-lg
+                        hover:opacity-80 transition duration-300 ease-in-out">Lihat Disini</a>
                     </div>
-                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-slate-100 md:truncate">
-                        Ladder diagram Motor Listrik PLC
-                    </h3>
-                    <p class="font-medium mb-6 text-base text-sencondary text-justify dark:text-slate-400">
-                        Projek ini menunjukkan cara kerja motor listrik yang dikendalikan oleh PLC menggunakan ladder diagram. Diagram ini berfungsi sebagai panduan untuk mengatur proses otomatisasi motor listrik dengan langkah-langkah yang jelas.
-                    </p>
-                    <a href="https://www.youtube.com/watch?v=M-VzVg9PW_4" 
-                    target="_blank" class="text-base font-semibold text-slate-200
-                    bg-primary py-3 px-4 rounded-full hover:shadow-lg
-                    hover:opacity-80 transition duration-300 ease-in-out">Lihat Disini</a>
-                </div>
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="flex items-center justify-center rounded-md shadow-md overflow-hidden h-72">
-                        <img src="src/img/pointer.png" alt="Pointer"
-                        width="w-full"/>
+                    <div class="mb-12 p-4 md:w-1/2">
+                        <div class="flex items-center justify-center rounded-md shadow-md overflow-hidden h-72">
+                            <img src="src/img/pointer.png" alt="Pointer"
+                            class="w-full object-cover"/>
+                        </div>
+                        <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-slate-100 md:truncate">
+                            Pointer dan Program Perangkingan C++
+                        </h3>
+                        <p class="font-medium mb-6 text-base text-sencondary text-justify dark:text-slate-400">
+                            Projek ini menggunakan konsep pointer dalam bahasa pemrograman C++ untuk membuat program yang dapat mengurutkan data dan menentukan peringkat. Program ini dirancang untuk mempermudah pengolahan data secara terstruktur.
+                        </p>
+                        <a href="https://youtu.be/RLAXWHkTyUM" 
+                        target="_blank" class="text-base font-semibold text-slate-200
+                        bg-primary py-3 px-4 rounded-full hover:shadow-lg
+                        hover:opacity-80 transition duration-300 ease-in-out">Lihat Disini</a>
                     </div>
-                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-slate-100 md:truncate">
-                        Pointer dan Program Perangkingan C++
-                    </h3>
-                    <p class="font-medium mb-6 text-base text-sencondary text-justify dark:text-slate-400">
-                        Projek ini menggunakan konsep pointer dalam bahasa pemrograman C++ untuk membuat program yang dapat mengurutkan data dan menentukan peringkat. Program ini dirancang untuk mempermudah pengolahan data secara terstruktur.
-                    </p>
-                    <a href="https://youtu.be/RLAXWHkTyUM" 
-                    target="_blank" class="text-base font-semibold text-slate-200
-                    bg-primary py-3 px-4 rounded-full hover:shadow-lg
-                    hover:opacity-80 transition duration-300 ease-in-out">Lihat Disini</a>
                 </div>
+                <div
+                    id="gradientOverlay"
+                    class="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-white dark:from-dark rounded-lg to-transparent pointer-events-none"
+                ></div>
+                <!-- Tombol "Read More" -->
+                <button
+                    id="readMoreButton"
+                    class="relative flex items-center content-center text-base font-semibold bottom-2 right-4 bg-sky-500 dark:bg-sky-600 text-white px-4 py-2 rounded-md 
+                    hover:bg-sky-600 dark:hover:bg-blue-700 focus:outline-none"
+                    onclick="toggleContent()"
+                    >
+                    Read More
+                </button>
             </div>
         </div>
     </section>

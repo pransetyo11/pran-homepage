@@ -29,7 +29,28 @@ hamburger.addEventListener('click', function(){
     hamburger.classList.toggle('hamburger-aktif')
     navMenu.classList.toggle('hidden');
 });
+// 
+function toggleContent() {
+    const contentContainer = document.getElementById("contentContainer");
+    const gradientOverlay = document.getElementById("gradientOverlay");
+    const readMoreButton = document.getElementById("readMoreButton");
+    
+    contentContainer.scrollIntoView({ behavior: "smooth", block: "start" });
+    // Toggle Kontainer
+    if (contentContainer.classList.contains("max-h-48")) {
+      contentContainer.classList.remove("max-h-48");
+      contentContainer.classList.add("max-h-full");
+      gradientOverlay.style.display = "none";
+      readMoreButton.textContent = "Read Less";
+    } else {
+      contentContainer.classList.add("max-h-48");
+      contentContainer.classList.remove("max-h-full");
+      gradientOverlay.style.display = "block";
+      readMoreButton.textContent = "Read More";
+    }
+  }
 
+  
 // klik diluar hamburger
 window.addEventListener('click', function(e){
     if(e.target != hamburger && e.target != navMenu){
