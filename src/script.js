@@ -1,4 +1,4 @@
-//fade effect
+ //fade effect
 document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.remove("opacity-0", "translate-y-10");
     document.body.classList.add("opacity-100", "translate-y-0");
