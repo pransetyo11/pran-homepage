@@ -1,3 +1,22 @@
+ // Elemen
+const portfolioContainer = document.getElementById('portfolioContainer');
+const overlay = document.getElementById('overlay');
+
+// Hover buka overlay
+portfolioContainer.addEventListener('mouseenter', () => {
+  overlay.classList.remove('opacity-0', 'scale-95', 'pointer-events-none');
+  overlay.classList.add('opacity-100', 'scale-100', 'pointer-events-auto');
+});
+
+// Klik di overlay untuk nutup
+overlay.addEventListener('click', (e) => {
+  // Kalau klik bukan pada gambar
+  if (!e.target.closest('img')) {
+    overlay.classList.add('opacity-0', 'scale-95', 'pointer-events-none');
+    overlay.classList.remove('opacity-100', 'scale-100', 'pointer-events-auto');
+  }
+});
+ 
  //fade effect
 document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.remove("opacity-0", "translate-y-10");
