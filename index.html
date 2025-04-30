@@ -262,9 +262,18 @@
                 <!-- Hidden Content -->
                 <div id="contentContainer" class="flex flex-wrap overflow-hidden max-h-48 transition-all duration-500 ease-in-out">
                     <div class="mb-12 p-4 md:w-1/2">
-                        <div class="flex items-center justify-center rounded-md shadow-md overflow-hidden h-72">
+                        <div class="relative group cursor-pointer items-center justify-center rounded-md shadow-md overflow-hidden h-72">
                             <img src="src/img/CNC.png" alt="CNCmilling"
-                            class="w-full object-cover"/>
+                            class="w-full object-cover rounded-xl transition-opacity duration-300 group-hover:opacity-0"/>
+                            <div class="absolute inset-0 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-300 rounded-xl overflow-hidden">
+                                <iframe
+                                  class="w-full h-full"
+                                  src="https://www.youtube.com/watch?v=UF76bwHcifI"
+                                  frameborder="0"
+                                  allow="autoplay; encrypted-media"
+                                  allowfullscreen
+                                ></iframe>
+                              </div>
                         </div>
                         <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-slate-100 md:truncate">
                             Project CNC Milling Absolut & Increment
