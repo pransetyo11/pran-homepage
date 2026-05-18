@@ -5,21 +5,36 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 // navbar fixed
-window.onscroll = function(){
-    const header = document.querySelector('header')
-    const fixedNav = header.offsetTop
-    const toTop = document.querySelector('#to-top')
+window.addEventListener('scroll', function () {
 
-    if(window.pageYOffset > fixedNav){
+    const header = document.querySelector('#header');
+    const toTop = document.querySelector('#to-top');
+
+    // navbar blur
+    if (window.scrollY > 50) {
+
         header.classList.add('navbar-fixed');
-        toTop.classList.remove('hidden')
-        toTop.classList.add('flex')
-    } else{
+
+        toTop.classList.remove('hidden');
+        toTop.classList.add('flex');
+
+        // munculkan navbar
+        header.classList.remove('nav-hidden');
+        header.classList.add('nav-show');
+
+    } else {
+
         header.classList.remove('navbar-fixed');
-        toTop.classList.add('hidden')
-        toTop.classList.remove('flex')
+
+        toTop.classList.add('hidden');
+        toTop.classList.remove('flex');
+
+        // sembunyikan navbar
+        header.classList.remove('nav-show');
+        header.classList.add('nav-hidden');
     }
-}
+
+});
 
 // hamburger
 const hamburger = document.querySelector('#hamburger');
@@ -95,3 +110,8 @@ function type() {
 }
 
 type();
+
+window.addEventListener('load', () => {
+    const header = document.querySelector('#header');
+    header.classList.add('nav-hidden');
+});
