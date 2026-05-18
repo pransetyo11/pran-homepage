@@ -69,3 +69,11 @@ body{
         transform: translateY(0);
     }
 }
+.gradient-text{
+  background: linear-gradient(90deg,#06b6d4,#6366f1,#8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h1{
+  letter-spacing: -2px;
+}

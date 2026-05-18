@@ -58,3 +58,40 @@ if(localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchM
 } else {
     darkToggle.checked = false;
 }
+
+const words = [
+  "Mechatronics Engineer",
+  "AI Engineer",
+  "Electrical & Automation",
+  "C++ & Python Developer",
+  "Deep Learning Enthusiast"
+];
+
+let i = 0;
+let j = 0;
+let currentWord = "";
+let isDeleting = false;
+
+function type() {
+  currentWord = words[i];
+  const el = document.getElementById("typewriter");
+
+  if (isDeleting) {
+    el.textContent = currentWord.substring(0, j--);
+    if (j < 0) {
+      isDeleting = false;
+      i = (i + 1) % words.length;
+    }
+  } else {
+    el.textContent = currentWord.substring(0, j++);
+    if (j > currentWord.length) {
+      isDeleting = true;
+      setTimeout(type, 1200);
+      return;
+    }
+  }
+
+  setTimeout(type, isDeleting ? 40 : 80);
+}
+
+type();
