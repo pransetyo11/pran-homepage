@@ -12,7 +12,7 @@
         )
     </script>
 </head>
-<body class="opacity-0 translate-y-10 transition-all duration-1000 ease-out bg-gray-50 dark:bg-dark">
+<body class="transition-all duration-1000 ease-out bg-gray-50 dark:bg-dark">
     <!-- Header Section Start -->
     <header class="bg-transparent absolute top-0 left-0 w-full 
     flex items-center  z-[9999]">
@@ -131,7 +131,7 @@
         <div class="container relative z-10">
             <div class="flex flex-wrap">
                 <div class="w-full self-center mt-32 px-4 lg:w-1/2">
-                    <div class="mb-6">
+                    <div class="reveal-left mb-6">
                         <p class="text-sm tracking-[0.35em] text-gray-800 mb-2 mx-1 dark:text-gray-400">
                             HELLO, I'M
                         </p>
@@ -144,13 +144,13 @@
                         </h1>
                     </div>
 
-                    <div class="text-2xl md:text-3xl font-semibold text-gray-600 mb-8 h-10 my-2">
+                    <div class="reveal-left text-2xl md:text-3xl font-semibold text-gray-600 mb-8 h-10 my-2">
                         <span id="typewriter" class="gradient-text"></span>
                     </div>
-                    <p class="font-medium text-slate-600 dark:text-slate-300 mb-8 leading-relaxed text-justify lg:text-lg">
+                    <p class="reveal-up font-medium text-slate-600 dark:text-slate-300 mb-8 leading-relaxed text-justify lg:text-lg">
                         Selamat datang di portofolio saya. Saya membangun solusi berbasis Artificial Intelligence, Machine Learning, dan Sistem Kontrol untuk menyelesaikan permasalahan engineering dan data.
                     </p>
-                    <p class="font-medium text-slate-600 dark:text-slate-300 mb-8 leading-relaxed text-justify lg:text-lg">
+                    <p class="reveal-up font-medium text-slate-600 dark:text-slate-300 mb-8 leading-relaxed text-justify lg:text-lg">
                         Welcome to my portfolio. I build solutions based on Artificial Intelligence, Machine Learning, and Control Systems to solve engineering and data-driven problems. 
                     </p>
                     <div class="flex flex-wrap gap-4 mt-6">
@@ -172,8 +172,8 @@
 
                     </div>
                 </div>
-                <div class="flex items-center justify-center lg:justify-end relative z-10 
-                            px-4 py-10 md:py-16 lg:py-0
+                <div class="reveal-right flex items-center justify-center lg:justify-end relative z-10 
+                            px-4 py-10 mx-auto md:py-16 lg:py-0
                             translate-x-0 md:translate-x-12 lg:translate-x-24">
                     <div class="relative group cursor-pointer">
 
@@ -260,7 +260,7 @@
     <!-- Hero Section End -->
 
     <!-- About Section Start -->
-    <section id="about" class="fade-in pt-16 pb-8 dark:bg-dark">
+    <section id="about" class="reveal-up pt-16 pb-8 dark:bg-dark">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full px-4 mb-10 lg:w-1/2">
@@ -317,7 +317,7 @@
         </div>
     </section>
 
-    <section id="skills" class="fade-in py-16 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+    <section id="skills" class="reveal-up py-16 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
 
         <div class="container">
 
@@ -414,7 +414,7 @@
     <!-- About Section End -->
     
     <!-- Portfolio Section Start -->
-    <section id="featured-project" class="fade-in py-32 bg-slate-100 dark:bg-slate-900">
+    <section id="featured-project" class="reveal-up py-32 bg-slate-100 dark:bg-slate-900">
 
         <div class="container">
 
@@ -496,7 +496,7 @@
         </div>
 
     </section>
-    <section id="portfolio" class="fade-in pt-32 pb-24 bg-slate-200 dark:bg-slate-700">
+    <section id="portfolio" class="reveal-up pt-32 pb-24 bg-slate-200 dark:bg-slate-700">
 
         <div class="container mx-auto px-4">
 
@@ -718,7 +718,7 @@
     <!-- Portfolio Section End -->
 
     <!--Sertifikat Section Start -->
-    <section id="certificate" class="fade-in pt-32 pb-24 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+    <section id="certificate" class="reveal-up pt-32 pb-24 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
 
         <div class="container mx-auto px-4">
 
@@ -1032,7 +1032,7 @@
     <!--Sertifikat Section end -->
 
     <!-- Blog section start -->
-    <section id="blog" class="fade-in pt-28 pb-16 bg-slate-200 dark:bg-slate-700">
+    <section id="blog" class="reveal-up pt-28 pb-16 bg-slate-200 dark:bg-slate-700">
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-w-2xl mx-auto text-center mb-16">
@@ -1068,7 +1068,7 @@
     <!-- Blog section end -->
 
     <!-- Contact Section Start -->
-    <section id="contact" class="fade-in pt-32 pb-24 bg-slate-200 dark:bg-slate-900">
+    <section id="contact" class="reveal-up pt-32 pb-24 bg-slate-200 dark:bg-slate-900">
 
         <div class="container mx-auto px-4">
 
@@ -1183,7 +1183,7 @@
     <!-- Contact Section End -->
 
     <!-- Footer Start-->
-    <footer class="fade-in bg-dark pt-20 pb-10 border-t border-slate-800">
+    <footer class="bg-dark pt-20 pb-10 border-t border-slate-800">
 
         <div class="container mx-auto px-4">
 
@@ -1272,5 +1272,31 @@
     <!-- Back to top end -->
 
     <script src="src/script.js"></script>
+
+    <script>
+    window.addEventListener('load', () => {
+
+        const reveals = document.querySelectorAll(
+            '.reveal-left, .reveal-right, .reveal-up'
+        );
+
+        const observer = new IntersectionObserver((entries) => {
+
+            entries.forEach((entry) => {
+
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+
+            });
+
+        }, {
+            threshold: 0.15
+        });
+
+        reveals.forEach((el) => observer.observe(el));
+
+    });
+    </script>
     </body>
 </html>
