@@ -112,6 +112,20 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.name-gradient{
+  background: linear-gradient(
+    135deg,
+    #374151 0%,
+    #b6b8bd 20%,
+    #9ca3af 60%,
+    #374151 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 h1{
   letter-spacing: -2px;
 }
