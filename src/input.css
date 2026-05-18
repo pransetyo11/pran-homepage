@@ -31,6 +31,8 @@ body{
     @apply flex flex-col items-center justify-center
     gap-3 px-6 py-5 rounded-2xl
     bg-white dark:bg-slate-700
+    dark:shadow-cyan-500/30
+    dark:hover:shadow-cyan-500/40
     shadow-md hover:shadow-2xl
     hover:-translate-y-2
     transition-all duration-300
