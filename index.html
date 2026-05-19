@@ -439,12 +439,12 @@
 
                 </div>
             </div>
-
-            <div class="reveal-right bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-500">
+            <!-- Time Series Bitcoin -->
+            <div class="reveal-right bg-white my-6 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-500">
 
                 <img src="src/img/baseline LSTM.png"
                 alt="Bitcoin Forecasting Project"
-                class="w-full max-w-4xl mx-auto rounded-t-3xl object-contain bg-slate-100 dark:bg-slate-900 p-6">
+                class="w-full max-w-4xl mt-6 mx-auto rounded-t-3xl object-contain bg-slate-100 dark:bg-slate-900 p-6">
 
                 <div class="reveal-up p-8 lg:p-12">
 
@@ -497,6 +497,126 @@
 
             </div>
 
+            <!-- Analisis sentimen seabank -->
+            <div class="reveal-right bg-white my-6 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-500">
+
+                <!-- Slider Container -->
+                <div class="relative bg-white dark:bg-slate-800">
+
+                    <!-- Left Button -->
+                    <button onclick="scrollSlider('seabank-slider', -1)"
+                    class="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-slate-300/80 dark:bg-slate-600/80 hover:bg-slate-500/80 hover:shadow-cyan-200/80 dark:hover:bg-slate-700 text-slate-700 dark:text-white w-12 h-12 rounded-full shadow-lg transition duration-300">
+                        &#10094;
+                    </button>
+
+                    <!-- Right Button -->
+                    <button onclick="scrollSlider('seabank-slider', 1)"
+                    class="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-slate-300/80 dark:bg-slate-600/80 hover:bg-slate-500/80 hover:shadow-cyan-200/80 dark:hover:bg-slate-700 text-slate-700 dark:text-white w-12 h-12 rounded-full shadow-lg transition duration-300">
+                        &#10095;
+                    </button>
+
+                    <!-- Images -->
+                    <div id="seabank-slider"
+                    class="flex overflow-x-hidden mt-6 scroll-smooth snap-x snap-mandatory">
+
+                        <div class="min-w-full snap-center flex justify-center items-center">
+
+                            <img src="src/img/seabank/word cloud.png"
+                            alt="SeaBank WordCloud"
+                            class="max-w-4xl w-full h-[550px] object-contain bg-slate-100 dark:bg-slate-900 p-6 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-md">
+
+                        </div>
+
+                        <div class="min-w-full snap-center flex justify-center items-center">
+
+                            <img src="src/img/seabank/word frequent.png"
+                            alt="SeaBank Frequent Words"
+                            class="max-w-4xl w-full h-[550px] object-contain bg-slate-100 dark:bg-slate-900 p-6 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-md">
+
+                        </div>
+
+                        <div class="min-w-full snap-center flex justify-center items-center">
+
+                            <img src="src/img/seabank/accuracy.png"
+                            alt="SeaBank Model Ranking"
+                            class="max-w-4xl w-full h-[550px] object-contain bg-slate-100 dark:bg-slate-900 p-6 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-md">
+
+                        </div>
+
+                    </div>
+
+                    <!-- Indicator Dots -->
+                    <div class="flex justify-center gap-3 py-4 bg-white dark:bg-slate-800">
+
+                        <span class="dot w-3 h-3 rounded-full bg-primary"></span>
+
+                        <span class="dot w-3 h-3 rounded-full bg-slate-300 dark:bg-slate-600"></span>
+
+                        <span class="dot w-3 h-3 rounded-full bg-slate-300 dark:bg-slate-600"></span>
+
+                    </div>
+
+                </div>
+
+                <div class="reveal-up p-8 lg:p-12">
+
+                    <h3 class="font-bold text-3xl text-dark dark:text-white mb-6">
+                        Sentiment Analysis of SeaBank Application Reviews
+                    </h3>
+
+                    <p class="max-w-3xl font-medium text-slate-600 dark:text-slate-300 leading-relaxed text-justify mb-8">
+                        Proyek analisis sentimen ulasan aplikasi SeaBank menggunakan beberapa arsitektur Deep Learning yaitu LSTM, GRU, dan CNN for Text. Dataset diproses melalui tahapan preprocessing NLP seperti cleaning text, tokenization, dan stopword removal sebelum dilakukan pelatihan model menggunakan TensorFlow untuk klasifikasi sentimen positif dan negatif.
+                    </p>
+
+                    <div class="flex flex-wrap gap-3 mb-8">
+
+                        <span class="px-5 py-2 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-white font-semibold text-sm hover:scale-105 transition duration-300">
+                            Python
+                        </span>
+
+                        <span class="px-5 py-2 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-white font-semibold text-sm hover:scale-105 transition duration-300">
+                            TensorFlow
+                        </span>
+
+                        <span class="px-5 py-2 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-white font-semibold text-sm hover:scale-105 transition duration-300">
+                            NLP
+                        </span>
+
+                        <span class="px-5 py-2 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-white font-semibold text-sm hover:scale-105 transition duration-300">
+                            LSTM
+                        </span>
+
+                        <span class="px-5 py-2 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-white font-semibold text-sm hover:scale-105 transition duration-300">
+                            GRU
+                        </span>
+
+                        <span class="px-5 py-2 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-white font-semibold text-sm hover:scale-105 transition duration-300">
+                            CNN for Text
+                        </span>
+
+                        <span class="px-5 py-2 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-white font-semibold text-sm hover:scale-105 transition duration-300">
+                            Sentiment Analysis
+                        </span>
+
+                    </div>
+
+                    <div class="flex flex-wrap gap-4">
+
+                        <a href="https://colab.research.google.com/drive/12N0icPthVb6H3xFSXYNGs7USEJIvZMaA?usp=sharing" target="_blank"
+                        class="bg-primary text-white px-8 py-3 rounded-full hover:opacity-80 transition duration-300">
+                            View Project
+                        </a>
+
+                        <a href="https://github.com/pransetyo11/Projek-Analisis-Sentimen-Aplikasi-Seabank" target="_blank"
+                        class="border border-primary dark:border-slate-200 text-primary dark:text-slate-100 px-8 py-3 rounded-full hover:bg-primary hover:text-white transition duration-300">
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
         </div>
 
     </section>

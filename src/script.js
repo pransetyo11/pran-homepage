@@ -115,3 +115,48 @@ window.addEventListener('load', () => {
     const header = document.querySelector('#header');
     header.classList.add('nav-hidden');
 });
+
+// slidebar seabank
+const slider = document.getElementById('seabank-slider');
+const dots = document.querySelectorAll('.dot');
+
+function scrollSlider(id, direction) {
+
+    const slider = document.getElementById(id);
+
+    const scrollAmount = slider.clientWidth;
+
+    slider.scrollBy({
+        left: direction * scrollAmount,
+        behavior: 'smooth'
+    });
+}
+
+slider.addEventListener('scroll', () => {
+
+    const index = Math.round(
+        slider.scrollLeft / slider.clientWidth
+    );
+
+    dots.forEach((dot, i) => {
+
+        if (i === index) {
+
+            dot.classList.remove(
+                'bg-slate-300',
+                'dark:bg-slate-600'
+            );
+
+            dot.classList.add('bg-primary');
+
+        } else {
+
+            dot.classList.remove('bg-primary');
+
+            dot.classList.add(
+                'bg-slate-300',
+                'dark:bg-slate-600'
+            );
+        }
+    });
+});
