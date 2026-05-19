@@ -132,6 +132,39 @@ function scrollSlider(id, direction) {
     });
 }
 
+// slidebar project cnn one piece
+const onepieceSlider = document.getElementById('onepiece-slider');
+const onepieceDots = document.querySelectorAll('.onepiece-dot');
+
+onepieceSlider.addEventListener('scroll', () => {
+
+    const index = Math.round(
+        onepieceSlider.scrollLeft / onepieceSlider.clientWidth
+    );
+
+    onepieceDots.forEach((dot, i) => {
+
+        if (i === index) {
+
+            dot.classList.remove(
+                'bg-slate-300',
+                'dark:bg-slate-600'
+            );
+
+            dot.classList.add('bg-primary');
+
+        } else {
+
+            dot.classList.remove('bg-primary');
+
+            dot.classList.add(
+                'bg-slate-300',
+                'dark:bg-slate-600'
+            );
+        }
+    });
+});
+
 slider.addEventListener('scroll', () => {
 
     const index = Math.round(

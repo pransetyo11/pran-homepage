@@ -200,7 +200,7 @@
                                     transition-all duration-300 flex items-center gap-1 sm:gap-2">
 
                             <img src="https://cdn.simpleicons.org/cplusplus/00599C"
-                                class="w-3 h-3 sm:w-4 sm:h-4" />
+                                class="w-4 h-4 sm:w-5 sm:h-5" />
 
                             <span class="text-[10px] sm:text-xs font-semibold tracking-wide">
                                 C++
@@ -215,8 +215,8 @@
                                     shadow-xl transform hover:-translate-y-2 hover:shadow-green-500/20
                                     transition-all duration-300 flex items-center gap-1 sm:gap-2">
 
-                            <img src="https://cdn.simpleicons.org/python/3776AB"
-                                class="w-3 h-3 sm:w-4 sm:h-4" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                class="w-4 h-4 sm:w-5 sm:h-5" />
 
                             <span class="text-[10px] sm:text-xs font-semibold tracking-wide">
                                 Python
@@ -233,7 +233,7 @@
 
                             <!-- AI Icon -->
                             <img src="https://cdn-icons-png.flaticon.com/512/2103/2103633.png"
-                                class="w-3 h-3 sm:w-4 sm:h-4" />
+                                class="w-4 h-4 sm:w-5 sm:h-5" />
 
                             <span class="text-[10px] sm:text-xs font-semibold tracking-wide">
                                 AI Engineer
@@ -439,6 +439,140 @@
 
                 </div>
             </div>
+
+            <!-- One Piece Image Classification -->
+            <div class="reveal-right bg-white my-6 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-500">
+
+                <!-- Slider Container -->
+                <div class="relative bg-white dark:bg-slate-800">
+
+                    <!-- Left Button -->
+                    <button onclick="scrollSlider('onepiece-slider', -1)"
+                    class="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-slate-300/80 dark:bg-slate-600/80 hover:bg-slate-500/80 dark:hover:bg-slate-700 text-slate-700 dark:text-white w-12 h-12 rounded-full shadow-lg transition duration-300">
+                        &#10094;
+                    </button>
+
+                    <!-- Right Button -->
+                    <button onclick="scrollSlider('onepiece-slider', 1)"
+                    class="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-slate-300/80 dark:bg-slate-600/80 hover:bg-slate-500/80 dark:hover:bg-slate-700 text-slate-700 dark:text-white w-12 h-12 rounded-full shadow-lg transition duration-300">
+                        &#10095;
+                    </button>
+
+                    <!-- Images -->
+                    <div id="onepiece-slider"
+                    class="flex overflow-x-hidden mt-6 scroll-smooth snap-x snap-mandatory">
+
+                        <!-- Prediction Result -->
+                        <div class="min-w-full snap-center flex justify-center items-center">
+
+                            <img src="src/img/one piece/hasil inference.png"
+                            alt="Prediction Result"
+                            class="max-w-4xl w-full h-[550px] object-contain bg-slate-100 dark:bg-slate-900 p-6 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-md">
+
+                        </div>
+
+                        <!-- Loss -->
+                        <div class="min-w-full snap-center flex justify-center items-center">
+
+                            <img src="src/img/one piece/loss.png"
+                            alt="Training Loss"
+                            class="max-w-4xl w-full h-[550px] object-contain bg-slate-100 dark:bg-slate-900 p-6 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-md">
+
+                        </div>
+
+                        <!-- Accuracy -->
+                        <div class="min-w-full snap-center flex justify-center items-center">
+
+                            <img src="src/img/one piece/accuracy.png"
+                            alt="Training Accuracy"
+                            class="max-w-4xl w-full h-[550px] object-contain bg-slate-100 dark:bg-slate-900 p-6 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-md">
+
+                        </div>
+
+                        <!-- Confusion Matrix -->
+                        <div class="min-w-full snap-center flex justify-center items-center">
+
+                            <img src="src/img/one piece/confusion matrix.png"
+                            alt="Confusion Matrix"
+                            class="max-w-4xl w-full h-[550px] object-contain bg-slate-100 dark:bg-slate-900 p-6 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-md">
+
+                        </div>
+
+                    </div>
+
+                    <!-- Indicator Dots -->
+                    <div class="flex justify-center gap-3 py-4 bg-white dark:bg-slate-800">
+
+                        <span class="onepiece-dot w-3 h-3 rounded-full bg-primary"></span>
+
+                        <span class="onepiece-dot w-3 h-3 rounded-full bg-slate-300 dark:bg-slate-600"></span>
+
+                        <span class="onepiece-dot w-3 h-3 rounded-full bg-slate-300 dark:bg-slate-600"></span>
+
+                        <span class="onepiece-dot w-3 h-3 rounded-full bg-slate-300 dark:bg-slate-600"></span>
+
+                    </div>
+
+                </div>
+
+                <div class="reveal-up p-8 lg:p-12">
+
+                    <h3 class="font-bold text-3xl text-dark dark:text-white mb-6">
+                        One Piece Character Image Classification
+                    </h3>
+
+                    <p class="max-w-3xl font-medium text-slate-600 dark:text-slate-300 leading-relaxed text-justify mb-8">
+                        Proyek Deep Learning untuk klasifikasi gambar karakter anime One Piece menggunakan Convolutional Neural Network (CNN). Model dilatih menggunakan dataset berisi 11.737 gambar dengan total 18 kelas karakter untuk mengenali karakter berdasarkan fitur visual dari gambar.
+                    </p>
+
+                    <div class="flex flex-wrap gap-3 mb-8">
+
+                        <span class="px-5 py-2 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-white font-semibold text-sm hover:scale-105 transition duration-300">
+                            Python
+                        </span>
+
+                        <span class="px-5 py-2 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-white font-semibold text-sm hover:scale-105 transition duration-300">
+                            TensorFlow
+                        </span>
+
+                        <span class="px-5 py-2 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-white font-semibold text-sm hover:scale-105 transition duration-300">
+                            CNN
+                        </span>
+
+                        <span class="px-5 py-2 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-white font-semibold text-sm hover:scale-105 transition duration-300">
+                            Deep Learning
+                        </span>
+
+                        <span class="px-5 py-2 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-white font-semibold text-sm hover:scale-105 transition duration-300">
+                            Image Classification
+                        </span>
+
+                        <span class="px-5 py-2 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-white font-semibold text-sm hover:scale-105 transition duration-300">
+                            Computer Vision
+                        </span>
+
+                    </div>
+
+                    <div class="flex flex-wrap gap-4">
+
+                        <a href="https://colab.research.google.com/drive/1gtZ_rbGR1wIvUCcrPQKobhWY63h8KVB6?usp=sharing"
+                        target="_blank"
+                        class="bg-primary text-white px-8 py-3 rounded-full hover:opacity-80 transition duration-300">
+                            View Project
+                        </a>
+
+                        <a href="https://github.com/pransetyo11/One-Piece-Image-Classification/"
+                        target="_blank"
+                        class="border border-primary dark:border-slate-200 text-primary dark:text-slate-100 px-8 py-3 rounded-full hover:bg-primary hover:text-white transition duration-300">
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
             <!-- Time Series Bitcoin -->
             <div class="reveal-right bg-white my-6 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-500">
 
@@ -636,8 +770,8 @@
                 </h2>
 
                 <p class="font-medium text-md text-slate-600 dark:text-slate-300 md:text-lg">
-                    Projek terbaru hasil implementasi Artificial Intelligence,
-                    Control System, dan Automation.
+                    Projek terbaru hasil implementasi
+                    Control System dan Automation pada saat kuliah.
                 </p>
 
             </div>
@@ -1388,10 +1522,14 @@
     <!-- Footer End -->
 
     <!-- Back to top start -->
-    <a href="#home" class="fixed justify-center items-center z-[9999] hidden bottom-4 right-4 p-4 h-14 w-14 bg-primary rounded-full 
-    hover:animate-pulse" id="to-top">
-        <div class="block relative z-10 w-5 h-5 border-t-2 border-l-2 rotate-45"></div> 
-        <div class="block absolute z-20 w-5 h-5 border-t-2 border-l-2 rotate-45 mt-5"></div>
+    <a href="#home"
+    class="fixed justify-center items-center z-[9999] hidden bottom-4 right-4 p-3 h-11 w-11 bg-primary rounded-full hover:animate-pulse"
+    id="to-top">
+
+        <div class="block relative z-10 w-4 h-4 border-t-2 border-l-2 rotate-45"></div>
+
+        <div class="block absolute z-20 w-4 h-4 border-t-2 border-l-2 rotate-45 mt-3"></div>
+
     </a>
     <!-- Back to top end -->
 
